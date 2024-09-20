@@ -1,0 +1,123 @@
+/*base*/
+// @use './resets'as *;
+
+/*Abstracts*/
+@use '../abstracts/variables'as *;
+
+* {
+    box-sizing: border-box !important;
+}
+
+html,
+body {
+    font-family: var(--font-lexend) !important;
+    @extend .text-gray;
+}
+
+body {
+    padding-top: 74px;
+}
+
+.btn {
+    font-family: var(--font-lexend) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    @extend .fw-bold;
+}
+
+h1 {
+    font-size: 68pt !important;
+}
+
+section {
+    @extend .py-5;
+}
+
+img {
+    @extend .w-100;
+}
+
+.logo-svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(103%) contrast(103%);
+}
+
+.detail-info {
+    background-image: url(../../assets/img/rockwellBg-04.jpg);
+    background-size: cover;
+    background-position: center;
+    @extend .text-gray;
+    @extend .pt-2;
+
+    h3 {
+        @extend .text-white;
+    }
+
+    .container>button:first-child {
+        @extend .m-4;
+        @extend .mt-2;
+    }
+
+    button {
+        @extend .me-3;
+        @extend .d-flex;
+        @extend .align-items-center;
+
+        span {
+            @extend .d-flex;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 720px !important;
+        min-width: 720px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 1200px !important;
+        min-width: 1200px !important;
+    }
+
+    .container-sm{
+            max-width: 1040px !important;
+            min-width: 1040px !important;
+    }
+}
+
+.featured-card {
+    width: 1366px;
+    position: relative;
+    left: -175px;
+
+    .detail-info {
+        background-image: none !important;
+        @extend .p-0;
+
+        .container>button:first-child {
+            @extend .d-none;
+        }
+    }
+
+    h4 {
+        @extend .text-white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .browser-icon {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(103%) contrast(103%);
+    }
+}

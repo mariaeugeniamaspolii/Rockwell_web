@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
+.navbar {
+    @extend .bg-black;
+    @extend .text-white;
+    @extend .py-3;
+
+    .navbar-nav {
+        @extend .d-flex;
+        @extend .align-items-center;
+
+        p {
+            @extend .text-uppercase;
+            @extend .p-2;
+            @extend .mb-0;
+        }
+    }
+}

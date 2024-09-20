@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+
+.item-card {
+    @extend .text-start;
+    border: none !important;
+
+    .card-text {
+        color: $gray-600;
+        @extend .mb-0;
+    }
+
+    .card-body {
+        @extend .p-2;
+        @extend .d-flex;
+        @extend .justify-content-between;
+        @extend .flex-column;
+    }
+
+    .card-header {
+        @extend .p-0;
+        @extend .bg-transparent;
+        @extend .border-0;
+    }
+
+    .card-title {
+        @extend .mb-1;
+    }
+
+    .card-subtitle {
+        @extend .mb-0;
+    }
+
+    svg {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(103%) contrast(103%);
+
+    }
+}

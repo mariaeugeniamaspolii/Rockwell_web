@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;700;900&display=swap');
+
+:root {
+  /*fonts*/
+  --font-lexend: 'Lexend', sans-serif;
+
+}
+
+//Colors
+$primary: #11763F;
+$secondary: #1A1515;
+$terciary: #e7e7e7;
+$fourth: #4b4b4b;
+
+$light-gray: #e7e7e7;
+$gray: #959595;
+$dark-gray: #1A1515;
+
+
+$colors: ("primary": $primary,
+  "secondary": $secondary,
+  "terciary": $terciary,
+  "light-gray": $light-gray,
+  "gray": $gray,
+  "dark-gray": $dark-gray,
+) !default;
+
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "terciary": $terciary,
+  "light-gray": $light-gray,
+  "gray": $gray,
+  "dark-gray": $dark-gray,
+) !default;
+
+@import "~bootstrap/scss/bootstrap";
