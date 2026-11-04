@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import CustomSwiper from '../Swiper/Swiper';
 import DetailInfo from '../DetailInfo/DetailInfo';

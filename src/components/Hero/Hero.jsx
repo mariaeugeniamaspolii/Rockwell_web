@@ -5,7 +5,7 @@ import ButtonNav from "../ButtonNav/ButtonNav"
 import { Container, Row, Col } from "react-bootstrap"
 import * as Icon from 'react-bootstrap-icons';
 
-const Hero = ({ }) => {
+const Hero = () => {
   return (
     <section className="hero-section">
       <Container>
