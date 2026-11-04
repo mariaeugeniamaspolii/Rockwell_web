@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Row, Col } from 'react-bootstrap'
 import ListItem from '../ListItem/ListItem'
+import Reveal from '../Reveal/Reveal'
 
 const List = ({ array }) => {
 
@@ -12,18 +13,18 @@ const List = ({ array }) => {
     return (
         <Row className='g-5 justify-content-center row'>
             <Col sm={12} md={5}>
-                <div className="song-list">
+                <Reveal className="song-list">
                     {leftSongs.map((song, index) => (
                         <ListItem key={song.id} song={song} index={index} />
                     ))}
-                </div>
+                </Reveal>
             </Col>
             <Col sm={12} md={5}>
-                <div className="song-list">
+                <Reveal className="song-list" delay={120}>
                     {rightSongs.map((song, index) => (
                         <ListItem key={song.id} song={song} index={index + middleIndex} />
                     ))}
-                </div>
+                </Reveal>
             </Col>
         </Row>
 

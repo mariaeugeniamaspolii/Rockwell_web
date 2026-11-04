@@ -5,6 +5,7 @@ import CustomCard from "../../components/Card/CustomCard";
 import { Row, Col } from 'react-bootstrap';
 import FeaturedSection from '../FeaturedSection/FeaturedSection';
 import DetailInfo from '../DetailInfo/DetailInfo';
+import Reveal from '../Reveal/Reveal';
 
 const Catalogue = ({ array }, ref) => {
     const bannerInterval = 12;
@@ -29,11 +30,11 @@ const Catalogue = ({ array }, ref) => {
                         )}
                         {!mostrarBanner && (
                             <Col sm={6} md={4} lg={3} className="gy-3">
-                                <div className="mb-4 h-100">
+                                <Reveal className="mb-4 h-100" delay={(index % 4) * 90}>
                                     <Link to={`/albums/${id}`} key={id}>
                                         <CustomCard img={cover} title={artist.name} text={formats.join(', ')} description={year} subtitle={name} />
                                     </Link>
-                                </div>
+                                </Reveal>
                             </Col>
                         )}
                     </>
