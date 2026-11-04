@@ -4,9 +4,10 @@
     @extend .pb-0;
 
     @extend .text-start;
-    background-image: url(../../assets/img/rockwellBgGreen.jpg);
+    background-image: url(../../assets/img/rockwellBg.jpg);
     height: 45rem;
     background-size: cover;
+    background-position: center top;
 
     h1 {
         font-weight: 900 !important;

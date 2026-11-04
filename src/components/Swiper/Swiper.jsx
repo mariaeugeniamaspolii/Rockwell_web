@@ -45,7 +45,7 @@ const CustomSwiper = ({ array }) => {
                 {array.map(({ id, name, cover, year }) => (
                     <Col key={id} sm={6} md={4} lg={3} className="swiper-slide d-flex justify-content-stretch">
                         <div className="h-100">
-                            <Link to={`/albums/${id}`} key={id}>
+                            <Link to={`/albums/${id}`} key={id} className="text-decoration-none">
                                 <CustomCard img={cover} title={name} description={year} text="" subtitle="" />
                             </Link>
                         </div>

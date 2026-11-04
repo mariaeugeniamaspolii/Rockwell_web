@@ -21,7 +21,7 @@ const Catalogue = ({ array }, ref) => {
                             <div className='my-4 '>
                                 <FeaturedSection bgColor="black" customClass="featured-card p-5" title="Must have"
                                     content={
-                                        <Link to={`/albums/${id}`} key={id}>
+                                        <Link to={`/albums/${id}`} key={id} className="text-decoration-none">
                                             <DetailInfo item={array[index]}></DetailInfo>
                                         </Link>
                                     }>
@@ -31,7 +31,7 @@ const Catalogue = ({ array }, ref) => {
                         {!mostrarBanner && (
                             <Col sm={6} md={4} lg={3} className="gy-3">
                                 <Reveal className="mb-4 h-100" delay={(index % 4) * 90}>
-                                    <Link to={`/albums/${id}`} key={id}>
+                                    <Link to={`/albums/${id}`} key={id} className="text-decoration-none">
                                         <CustomCard img={cover} title={artist.name} text={formats.join(', ')} description={year} subtitle={name} />
                                     </Link>
                                 </Reveal>
